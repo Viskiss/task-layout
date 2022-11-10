@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.section`
 
-@media (min-width: 375px)  {
+@media (max-width: 1279px)  {
   height: 210px;
   display: flex;
   flex-direction: column;

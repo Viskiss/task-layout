@@ -28,27 +28,15 @@ export default styled.section`
       margin-bottom: 16px;
     }
 
-    .skills__info {
-      /* margin-right: 150px; */
-    }
 
     .skills__header {
       display: flex;
       justify-content: center;
     }
 
-    .skills__info-slider {
-      height: 4px;
-      width: 339px;
-      background-color: #ddd;
-    }
-
-    .skills__line {
-      height: 4px;
-      color: white;
-      width: 80%;
-      background-color: #2196f3;
-    }
+   .skills__info-progress {
+    width: 339px;
+   }
   }
 
   @media (min-width: 1280px) {
@@ -75,17 +63,8 @@ export default styled.section`
       margin-right: 150px;
     }
 
-    .skills__info-slider {
-      height: 4px;
-      width: 455px;
-      background-color: #ddd;
-    }
-
-    .skills__line {
-      height: 4px;
-      color: white;
-      width: 80%;
-      background-color: #2196f3;
-    }
+    .skills__info-progress {
+    width: 445px;
+   }
   }
 `;

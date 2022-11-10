@@ -1,11 +1,17 @@
 import StyledWriteMe from "./WriteMe.styles";
 
+import laptop from "./Frame.png"
+
 const WriteMe = () => {
   
   return (
     <StyledWriteMe>
       <div className="write__image">
-        <img className="write__image-image" src="/images/header/Frame.png" alt="Frame" />
+        <img 
+          className="write__image-image" 
+          src={laptop} 
+          alt="Frame"
+        />
       </div>
       <div>
         <h1 className="write__header">Дизайн и верстка</h1>

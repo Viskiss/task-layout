@@ -1,27 +1,18 @@
 import StyledNavigation from "./Navigation.styles";
+
+import { LINK_TITLE } from "./links";
+import Item from "./component";
 import logo from "./WD.png";
 
 const Navigation = () => {
-  
+
   return (
     <StyledNavigation>
       <img className="navigation__logo" src={logo} alt="" />
-      <nav className="navigation" >
-        <a className="navigation__logo-a" href="">
-          ГЛАВНАЯ
-        </a>
-        <a className="navigation__logo-a" href="">
-          ОБ АВТОРЕ
-        </a>
-        <a className="navigation__logo-a" href="">
-          РАБОТЫ
-        </a>
-        <a className="navigation__logo-a" href="">
-          ПРОЦЕСС
-        </a>
-        <a className="navigation__logo-a" href="">
-          КОНТАКТЫ
-        </a>
+      <nav className="navigation">
+        {LINK_TITLE.map((item) => (
+          <Item key={item.title} title={item.title} />
+        ))}
       </nav>
     </StyledNavigation>
   );
