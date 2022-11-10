@@ -1,12 +1,12 @@
 import StyledNavigation from "./Navigation.styles";
+import logo from "./WD.png";
 
-import logo from "./WD.png"
-
-const Navigation = (props) => {
+const Navigation = () => {
+  
   return (
     <StyledNavigation>
       <img className="navigation__logo" src={logo} alt="" />
-      <nav>
+      <nav className="navigation" >
         <a className="navigation__logo-a" href="">
           ГЛАВНАЯ
         </a>

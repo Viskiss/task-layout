@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 import WriteMe from "./WriteMe";
 
 const Header = () => {
-
+  
   return (
     <StyledHeader>
       <div className="header__container">

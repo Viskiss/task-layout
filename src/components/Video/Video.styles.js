@@ -2,19 +2,21 @@ import styled from "styled-components";
 
 export default styled.section`
 
-@media (max-width: 1279px) {
-  height: 351px;
+@media (max-width: 1279px)  {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #eeeff1;
+  height: 596px;
 
-  .about-me__container {
-    width: 323px;
+  .video__info {
+    padding-top: 100px;
+    width: 339px;
     text-align: center;
   }
 
-  .about-me__container-header {
-    margin-top: 91px;
-    margin-bottom: 42px;
+  .video__info-header {
+    margin: 0 0 50px 0;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
@@ -22,50 +24,65 @@ export default styled.section`
     line-height: 38px;
   }
 
-  .about-me__container-text {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    margin-bottom: 82px;
-    color: #727272;
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1280px) {
-   height: 366px;
-  display: flex;
-  justify-content: center;
-
-  .about-me__container {
-    width: 540px;
-    text-align: center;
-  }
-
-  .about-me__container-header {
-    margin-top: 120px;
-    margin-bottom: 50px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 38px;
-  }
-
-  .about-me__container-text {
+  .video__info-text {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    margin-bottom: 100px;
+    margin-bottom: 57px;
     color: #727272;
     font-size: 16px;
   }
+
+  .video__image {
+    width: 339px;
+    object-fit: cover;
+    height: max-content;
+  }
 }
- 
+
+@media (min-width: 1280px) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #eeeff1;
+  height: 1004px;
+
+  .video__info {
+    padding-top: 100px;
+    width: 540px;
+    text-align: center;
+  }
+
+  .video__info-header {
+    margin: 0 0 50px 0;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .video__info-text {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 57px;
+    color: #727272;
+    font-size: 16px;
+  }
+
+  .video__image {
+    width: 58%;
+    object-fit: cover;
+    height: max-content;
+  }
+}
+  
 
   
 `;
