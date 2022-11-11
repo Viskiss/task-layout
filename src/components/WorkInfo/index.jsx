@@ -1,6 +1,7 @@
-import Item from "./component";
-import { WORK_INFO } from "./wirkInfo";
 import StyledWorkInfo from "./WorkInfo.styles";
+
+import Item from "./component/Item";
+import { WORK_INFO } from "./wirkInfo";
 
 const WorkInfo = () => {
   return (

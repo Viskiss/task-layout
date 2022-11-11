@@ -6,6 +6,27 @@ export default styled.section`
   flex-direction: column;
   background: #eeeff1;
 
+  @media (max-width: 375px) {
+
+    .container {
+      width: 300px;
+    }
+    .form__connection-input {
+      border: none;
+      width: 80%;
+      height: 50px;
+      margin-bottom: 20px;
+      padding: 0 0 0 20px;
+    }
+
+    .form__connection-text {
+      border: none;
+      width: 80%;
+      height: 175px;
+      padding: 17px 0 0 20px;
+    }
+  }
+
   @media (max-width: 1279px) {
     height: 830px;
 

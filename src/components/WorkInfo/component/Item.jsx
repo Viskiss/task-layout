@@ -1,4 +1,4 @@
-import doc from "./project.png";
+import doc from "../../../images/project.png";
 
 const Item = (props) => {
   return (

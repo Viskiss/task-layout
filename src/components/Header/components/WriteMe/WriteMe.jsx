@@ -1,6 +1,6 @@
 import StyledWriteMe from "./WriteMe.styles";
 
-import laptop from "./Frame.png";
+import laptop from "../../../../images/Frame.png";
 
 const WriteMe = () => {
   return (
@@ -8,7 +8,7 @@ const WriteMe = () => {
       <div className="write__image">
         <img className="write__image-image" src={laptop} alt="Frame" />
       </div>
-      <div>
+      <div className="write__text" >
         <h1 className="write__header">Дизайн и верстка</h1>
         <p className="text-text-block">
           Lorem Ipsum - это текст-"рыба", часто используемый в печати и
