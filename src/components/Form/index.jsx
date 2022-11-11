@@ -5,8 +5,8 @@ const Form = () => {
     <StyledForm>
       <div className="container">
         <div className="form__info">
-          <h1 className="form__info-header">Хотите веб-сайт?</h1>
-          <p className="form__info-text">
+          <h1 className="header-text_block">Хотите веб-сайт?</h1>
+          <p className="text-text-block">
             Lorem Ipsum - это текст-"рыба", часто используемый в печати и
             вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
             латинице с начала XVI века.

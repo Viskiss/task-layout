@@ -1,5 +1,9 @@
 import StyledSkills from "./Skills.styles";
 
+import menPhoto from "./photo.png"
+
+
+
 const Skills = () => {
   return (
     <StyledSkills>
@@ -26,7 +30,7 @@ const Skills = () => {
       </div>
       </div>
       <div className="skills__images" >
-        <img className="skills__image" src="/images/skills/photo.png" alt="" />
+        <img className="skills__image" src={menPhoto} alt="men photo" />
       </div>
       
     </StyledSkills>

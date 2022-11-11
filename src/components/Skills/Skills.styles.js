@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
 export default styled.section`
+  display: flex;
+  justify-content: center;
+  
   @media (max-width: 1279px) {
-    display: flex;
-    justify-content: center;
     flex-direction: column-reverse;
     height: 815px;
 
-    .skills{
+    .skills {
       display: flex;
       justify-content: center;
     }
@@ -28,30 +29,23 @@ export default styled.section`
       margin-bottom: 16px;
     }
 
-
     .skills__header {
       display: flex;
       justify-content: center;
     }
 
-   .skills__info-progress {
-    width: 339px;
-   }
+    .skills__info-progress {
+      width: 339px;
+    }
   }
 
   @media (min-width: 1280px) {
-    display: flex;
-    justify-content: center;
     height: 450px;
-
     margin: 100px 0 100px 0;
-
-    
 
     .skills__skill {
       margin-top: 100px;
     }
-
 
     .skills__image {
       width: 555px;
@@ -64,7 +58,7 @@ export default styled.section`
     }
 
     .skills__info-progress {
-    width: 445px;
-   }
+      width: 445px;
+    }
   }
 `;

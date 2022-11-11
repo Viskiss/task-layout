@@ -3,11 +3,12 @@ import styled from "styled-components";
 import playbtn from "./play-button.svg";
 
 export default styled.section`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #eeeff1;
+  
   @media (max-width: 1279px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: #eeeff1;
     height: 596px;
 
     .video {
@@ -22,36 +23,17 @@ export default styled.section`
       background-color: transparent;
       border: none;
       background-image: url(${playbtn});
+      transform: scale(0.5);
       width: 100px;
       height: 100px;
       font-size: 0;
       color: transparent;
+      cursor: pointer;
     }
 
     .video__info {
-      padding-top: 100px;
       width: 339px;
       text-align: center;
-    }
-
-    .video__info-header {
-      margin: 0 0 50px 0;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 38px;
-    }
-
-    .video__info-text {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      margin-bottom: 57px;
-      color: #727272;
-      font-size: 16px;
     }
 
     .video__image {
@@ -62,10 +44,6 @@ export default styled.section`
   }
 
   @media (min-width: 1280px) {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background: #eeeff1;
     height: 1004px;
 
     .video {
@@ -84,32 +62,12 @@ export default styled.section`
       height: 100px;
       font-size: 0;
       color: transparent;
+      cursor: pointer;
     }
 
     .video__info {
-      padding-top: 100px;
       width: 540px;
       text-align: center;
-    }
-
-    .video__info-header {
-      margin: 0 0 50px 0;
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 500;
-      font-size: 32px;
-      line-height: 38px;
-    }
-
-    .video__info-text {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 26px;
-      margin-bottom: 57px;
-      color: #727272;
-      font-size: 16px;
     }
 
     .video__image {

@@ -5,8 +5,8 @@ import StyledWorkInfo from "./WorkInfo.styles";
 const WorkInfo = () => {
   return (
     <StyledWorkInfo>
-      {WORK_INFO.map((item) => (
-        <Item title={item.title} num={item.num} />
+      {WORK_INFO.map((item, idx) => (
+        <Item key={idx} title={item.title} num={item.num} />
       ))}
     </StyledWorkInfo>
   );

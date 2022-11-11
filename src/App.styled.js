@@ -16,6 +16,8 @@ code {
 }
 
     .button {
+
+    cursor: pointer;
     width: 225px;
     height: 65px;
     background: #34547a;
@@ -26,7 +28,70 @@ code {
     letter-spacing: 0.1em;
     border: none;
     color: white;
+    transition:  0.5s ;
     }
+
+    .button:hover {
+    transform: scale(1.03);
+    -webkit-box-shadow: 0px 5px 15px 5px rgba(34, 60, 80, 0.57);
+    -moz-box-shadow: 0px 5px 15px 5px rgba(34, 60, 80, 0.57);
+    box-shadow: 0px 5px 15px 5px rgba(34, 60, 80, 0.57);
+    }
+
+    @media (max-width: 1279px) {
+       .header-text_block {
+        margin: 91px 0 50px 0;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+       }
+
+       .text-text-block {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        margin-bottom: 57px;
+        color: #727272;
+        font-size: 16px;
+        padding: 0;
+       }
+    }
+
+    @media (min-width: 1280px) {
+       .header-text_block {
+        margin: 100px 0 50px 0;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+       }
+
+       .text-text-block {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 57px;
+        color: #727272;
+        font-size: 16px;
+        padding: 0;
+       }
+    
+    }
+
+
+   
+
+
+
+
+
 `;
 
 export default GlobalStyle;
