@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 export default styled.section`
-  display: flex;
-  height: fit-content;
-  width: 100%;
-  justify-content: center;
-  align-content: flex-start;
-  padding: 28px 0 28px 0;
-
   @media (max-width: 1279px) {
     flex-flow: row wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-box-orient: horizontal;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -webkit-flex;
     -webkit-flex-flow: row wrap;
 
     .projects:nth-of-type(1) {
@@ -77,13 +76,13 @@ export default styled.section`
   }
 
   @media (min-width: 1280px) {
-    /* display: flex;
-      flex-wrap: wrap;
-      height: fit-content;
-      width: 100%;
-      justify-content: center;
-      align-content: flex-start;
-      padding: 28px 0 28px 0; */
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 28px 0 28px 0;
 
     .projects {
       background: rgba(52, 84, 122, 0.8);
