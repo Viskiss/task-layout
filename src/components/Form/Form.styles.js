@@ -44,7 +44,7 @@ export default styled.section`
 
     .form__connection-input {
       border: none;
-      width: 322px;
+      width: 94%;
       height: 50px;
       margin-bottom: 20px;
       padding: 0 0 0 20px;
@@ -52,7 +52,7 @@ export default styled.section`
 
     .form__connection-text {
       border: none;
-      width: 322px;
+      width: 94%;
       height: 175px;
       padding: 17px 0 0 20px;
     }

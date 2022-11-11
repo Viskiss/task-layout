@@ -6,9 +6,11 @@ import { ITEMS_SRC } from "./items";
 const Projects = () => {
   return (
     <StyledProjects>
-      {ITEMS_SRC.map((item, idx) => (
-        <Item key={idx} src={item.src} />
-      ))}
+      <div className="project__order">
+        {ITEMS_SRC.map((item, idx) => (
+          <Item key={idx} src={item.src} />
+        ))}
+      </div>
     </StyledProjects>
   );
 };

@@ -1,15 +1,59 @@
 import styled from "styled-components";
 
 export default styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  height: fit-content;
-  width: 100%;
-  justify-content: center;
-  align-content: flex-start;
-  padding: 28px 0 28px 0;
-  
   @media (max-width: 1279px) {
+    .project__order {
+      display: flex;
+      height: fit-content;
+      width: 100%;
+      justify-content: center;
+      align-content: flex-start;
+      padding: 28px 0 28px 0;
+      flex-flow: row wrap;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -ms-box-orient: horizontal;
+      display: -moz-box;
+      display: -moz-flex;
+      display: -webkit-flex;
+      -webkit-flex-flow: row wrap;
+    }
+
+    .projects:nth-of-type(1) {
+      order: 4;
+    }
+    .projects:nth-of-type(8) {
+      order: 1;
+    }
+
+    .projects:nth-of-type(3) {
+      order: 7;
+    }
+    .projects:nth-of-type(7) {
+      order: 3;
+    }
+
+    .projects:nth-of-type(4) {
+      order: 1;
+    }
+    .projects:nth-of-type(6) {
+      order: 4;
+    }
+
+    .projects:nth-of-type(2) {
+      order: 7;
+    }
+    .projects:nth-of-type(7) {
+      order: 2;
+    }
+
+    .projects:nth-of-type(1) {
+      order: 4;
+    }
+    .projects:nth-of-type(4) {
+      order: 1;
+    }
+
     .projects {
       background: rgba(52, 84, 122, 0.8);
       width: 50%;
@@ -32,6 +76,7 @@ export default styled.section`
         background-color: rgba(114, 78, 136, 0.6);
         transition: opacity 0.3s;
       }
+
       .projects__image:hover {
         opacity: 0.2;
       }
@@ -39,6 +84,16 @@ export default styled.section`
   }
 
   @media (min-width: 1280px) {
+    .project__order {
+      display: flex;
+      flex-wrap: wrap;
+      height: fit-content;
+      width: 100%;
+      justify-content: center;
+      align-content: flex-start;
+      padding: 28px 0 28px 0;
+    }
+
     .projects {
       background: rgba(52, 84, 122, 0.8);
       width: 25%;
@@ -46,6 +101,20 @@ export default styled.section`
       justify-content: center;
       align-items: center;
       position: relative;
+    }
+
+    .projects:nth-of-type(1) {
+      order: 2;
+    }
+    .projects:nth-of-type(2) {
+      order: 1;
+    }
+
+    .projects:nth-of-type(5) {
+      order: 6;
+    }
+    .projects:nth-of-type(6) {
+      order: 5;
     }
 
     .projects__image-viev {

@@ -6,8 +6,8 @@ export const ITEMS_SRC = [
   { src: `${pictureWork}` },
   { src: `${pictureNote}` },
   { src: `${pictureWork}` },
-  { src: `${pictureWork}` },
   { src: `${pictureNote}` },
   { src: `${pictureWork}` },
   { src: `${pictureNote}` },
+  { src: `${pictureWork}` },
 ];
