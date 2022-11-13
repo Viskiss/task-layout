@@ -9,14 +9,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .button {
   cursor: pointer;
-  width: 225px;
-  height: 65px;
+  width: 190px;
+  height: 55px;
   background: #34547a;
   font-family: "Roboto";
   font-size: 16px;
@@ -28,7 +32,6 @@ code {
   transition:  0.5s ;
 
   :hover {
-    transform: scale(1.03);
     -webkit-box-shadow: 0px 5px 15px 5px rgba(34, 60, 80, 0.57);
     -moz-box-shadow: 0px 5px 15px 5px rgba(34, 60, 80, 0.57);
     box-shadow: 0px 5px 15px 5px rgba(34, 60, 80, 0.57);
@@ -36,12 +39,18 @@ code {
 }
 
       .header-text_block {
-        margin: 100px 0 50px 0;
+        margin: 0 0 50px 0;
+        padding-top: 100px;
         font-family: "Roboto";
         font-style: normal;
-        font-weight: 500;
         font-size: 32px;
         line-height: 38px;
+
+        @media (max-width: 1024px) {
+        margin: 0 0 50px 0;
+        padding-top: 91px;
+        }
+
        }
 
        .text-text-block {
@@ -54,30 +63,14 @@ code {
         color: #727272;
         font-size: 16px;
         padding: 0;
-       }
 
-      @media (max-width: 1024px) {
-       .header-text_block {
-        margin: 91px 0 50px 0;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 38px;
-       }
-
-       .text-text-block {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
+        @media (max-width: 1024px) {
         line-height: 120%;
         margin-bottom: 44px;
-        color: #727272;
-        font-size: 16px;
-        padding: 0;
+        }
        }
-    }
+
+     
 
    
        

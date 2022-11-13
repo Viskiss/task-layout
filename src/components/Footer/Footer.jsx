@@ -1,6 +1,6 @@
 import StyledFooter from "./Footer.styles";
 
-import vkLogo from "./image.png";
+import vkLogo from "../../images/vk.png";
 
 const Footer = () => {
   return (

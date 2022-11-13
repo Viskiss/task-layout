@@ -1,17 +1,13 @@
 import StyledForm from "./Form.styles";
 
+import { Button } from "../Button";
+import { TextContent } from "../TextContent";
+
 const Form = () => {
   return (
     <StyledForm>
       <div className="container">
-        <div className="form__info">
-          <h1 className="header-text_block">Хотите веб-сайт?</h1>
-          <p className="text-text-block">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
-            латинице с начала XVI века.
-          </p>
-        </div>
+        <TextContent title="Хотите веб-сайт?" styled="form__info" />
         <div className="form__connection">
           <input
             className="form__connection-input"
@@ -29,7 +25,7 @@ const Form = () => {
           ></textarea>
         </div>
         <div className="container__button">
-          <button className="button">НАПИСАТЬ МНЕ</button>
+          <Button title="НАПИСАТЬ МНЕ" />
         </div>
       </div>
     </StyledForm>

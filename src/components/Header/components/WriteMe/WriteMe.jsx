@@ -1,6 +1,7 @@
 import StyledWriteMe from "./WriteMe.styles";
 
 import laptop from "../../../../images/Frame.png";
+import { Button } from "../../../Button";
 
 const WriteMe = () => {
   return (
@@ -15,7 +16,7 @@ const WriteMe = () => {
           вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
           латинице с начала XVI века.
         </p>
-        <button className="button">НАПИСАТЬ МНЕ</button>
+        <Button title="НАПИСАТЬ МНЕ"/>
       </div>
     </StyledWriteMe>
   );

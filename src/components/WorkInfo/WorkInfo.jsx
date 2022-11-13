@@ -1,7 +1,6 @@
 import StyledWorkInfo from "./WorkInfo.styles";
 
 import Item from "./component/Item";
-import { WORK_INFO } from "./wirkInfo";
 
 const WorkInfo = () => {
   return (
@@ -12,5 +11,14 @@ const WorkInfo = () => {
     </StyledWorkInfo>
   );
 };
+
+export const WORK_INFO = [
+  { title: "проектов", num: "40+" },
+  { title: "проектов", num: "40+" },
+  { title: "проектов", num: "40+" },
+  { title: "проектов", num: "40+" },
+  { title: "проектов", num: "40+" },
+  { title: "проектов", num: "40+" },
+];
 
 export default WorkInfo;

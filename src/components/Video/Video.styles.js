@@ -1,79 +1,56 @@
 import styled from "styled-components";
 
-import playbtn from "./play-button.svg";
+import playbtn from "../../images/play-button.svg";
 
 export default styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
   background: #eeeff1;
-  
-  @media (max-width: 1279px) {
-    height: 596px;
 
-    .video {
-      display: flex;
-      justify-content: center;
-      position: relative;
-      align-items: center;
-    }
+  .video {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+  }
 
-    .video__button {
-      position: absolute;
-      background-color: transparent;
-      border: none;
-      background-image: url(${playbtn});
+  .video__button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    background-image: url(${playbtn});
+    width: 100px;
+    height: 100px;
+    bottom: 50%;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+
+    @media (max-width: 800px) {
       transform: scale(0.5);
-      width: 100px;
-      height: 100px;
-      font-size: 0;
-      color: transparent;
-      cursor: pointer;
-    }
-
-    .video__info {
-      width: 339px;
-      text-align: center;
-    }
-
-    .video__image {
-      width: 339px;
-      object-fit: cover;
-      height: max-content;
     }
   }
 
-  @media (min-width: 1280px) {
-    height: 1004px;
+  .video__info {
+    width: 540px;
+    text-align: center;
 
-    .video {
-      display: flex;
-      justify-content: center;
-      position: relative;
-      align-items: center;
+    @media (max-width: 800px) {
+      width: 339px;
     }
+  }
 
-    .video__button {
-      position: absolute;
-      background-color: transparent;
-      border: none;
-      background-image: url(${playbtn});
-      width: 100px;
-      height: 100px;
-      font-size: 0;
-      color: transparent;
-      cursor: pointer;
-    }
+  .video__image {
+    width: 58%;
+    object-fit: cover;
+    height: max-content;
+    padding-bottom: 100px;
 
-    .video__info {
-      width: 540px;
-      text-align: center;
-    }
-
-    .video__image {
-      width: 58%;
-      object-fit: cover;
-      height: max-content;
+    @media (max-width: 800px) {
+      .video__image {
+        width: 339px;
+      }
     }
   }
 `;
